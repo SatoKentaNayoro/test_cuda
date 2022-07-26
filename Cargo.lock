@@ -299,6 +299,7 @@ dependencies = [
 name = "test_cuda"
 version = "0.1.0"
 dependencies = [
+ "fil-rustacuda",
  "rust-gpu-tools",
 ]
 

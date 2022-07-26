@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 rust-gpu-tools = { version = "0.6.0", features = ["cuda"] }
+fil-rustacuda = "0.1.3"
