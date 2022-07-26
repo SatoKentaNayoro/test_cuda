@@ -2,5 +2,7 @@ use rust_gpu_tools::Device;
 
 fn main() {
     let devices = Device::all();
-    println!("{:?}", devices);
+    for d in devices {
+        println!("{:?}", d.cuda_device().unwrap());
+    }
 }
