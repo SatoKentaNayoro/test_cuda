@@ -15,7 +15,8 @@ fn main() {
     drop(guard);
     let mut guard_r = t_vec.write().unwrap();
     if !guard_r[0].1.load(Ordering::SeqCst) {
-        guard_r[0].0 = 2
+        guard_r[0].0 = 2;
+        guard_r[0].1.store(true, Ordering::SeqCst);
     }
     drop(guard_r);
     println!("{:?}", t_vec.read().unwrap()[0])
