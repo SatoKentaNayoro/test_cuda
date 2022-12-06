@@ -6,19 +6,25 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing = "0.1"
+clap = "4.0"
 rand = "0.8.1"
 hex = "0.4.3"
-uuid = { version = "1.1.2", features = ["v4", "fast-rng", "macro-diagnostics"] }
-
-[dependencies.snarkvm-algorithms]
-git = "https://github.com/AleoHQ/snarkVM.git"
-branch = "feat/new-posw"
-features = ["coinbase_puzzle"]
-
-[dependencies.snarkvm-curves]
-git = "https://github.com/AleoHQ/snarkVM.git"
-branch = "feat/new-posw"
-
-[dependencies.snarkvm-utilities]
-git = "https://github.com/AleoHQ/snarkVM.git"
-branch = "feat/new-posw"
+#hex = "0.4.3"
+#uuid = { version = "1.1.2", features = ["v4", "fast-rng", "macro-diagnostics"] }
+#system-info = "0.1.2"
+#flurry = "0.4.0"
+#
+#[dependencies.snarkvm-algorithms]
+#git = "https://github.com/AleoHQ/snarkVM.git"
+#branch = "feat/new-posw"
+#features = ["coinbase_puzzle"]
+#
+#[dependencies.snarkvm-curves]
+#git = "https://github.com/AleoHQ/snarkVM.git"
+#branch = "feat/new-posw"
+#
+#[dependencies.snarkvm-utilities]
+#git = "https://github.com/AleoHQ/snarkVM.git"
+#branch = "feat/new-posw"
